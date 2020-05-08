@@ -1,0 +1,21 @@
+t=int(input("no of test cases= ")
+if t<=10:
+  for i in range(t):
+    m=int(input("enter first no= ")
+    n=int(input("enter second no= ")
+    if m<=1000000000 and n<=100000:
+      for val in range(m,n+1):
+        if val>1:
+          for p in range(2,val//2+2):
+            if val%p==0:
+              break
+            else:
+              if p==val//2+1:
+                print(val)
+    else:
+      print("wrong input")
+      break
+else:
+  print("enter test cases less than 10")
+
+
